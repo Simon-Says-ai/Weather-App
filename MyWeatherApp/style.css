@@ -1,0 +1,95 @@
+body{
+    margin: 0;
+    font-family: Roboto;
+    background-color: rgb(104, 154, 239);
+}
+
+.container{
+    background-color: hsl(201, 76%, 63%);
+    box-shadow: 0 0 14px rgba(0,0,0,.2);
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+    max-width: 600px;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+form input[type="text"]{
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    width: 55%;
+    border-radius: 5px;
+}
+
+form input[type="submit"]{
+    background-color: hsl(30, 90%, 51%);
+    color: blue;
+    border: none;
+    padding: 11px 20px;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-left: 15px;
+    transition: background-color .3s ease;
+}
+
+form input[type="submit"]:hover{
+    background-color: orange;
+}
+
+.icon img{
+    width: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.temparature{
+    font-size: 38px;
+    font-weight: bold;
+    margin: 20px 0px;
+}
+
+.description{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.details > div{
+    padding: 18px;
+    background-color: hsla(169, 67%, 52%, 0.945);
+    margin: 10px;
+    border-radius: 9px;
+    flex: 1;
+    text-align: center;
+    min-height: 45px;
+}
+
+@media(max-width: 768px){
+    form{
+        flex-direction: column;
+
+    }
+    form input[type="text"]{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+}
